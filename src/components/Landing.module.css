@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+.Landing__Header {
+    position: fixed;
+}
+
 .Landing__Button {
     position: fixed;
     top: 85vh;

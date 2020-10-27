@@ -1,36 +1,45 @@
 import React from 'react';
 import classes from './About.module.css'
 
-export const About = () => {
-    return (
-        <div className={classes.About}>
-            <p>Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Nec nam aliquam sem et tortor consequat. Aliquet bibendum enim facilisis gravida neque convallis. Turpis massa tincidunt dui ut. Bibendum at varius vel pharetra. Vitae aliquet nec ullamcorper sit. Ac felis donec et odio. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Natoque penatibus et magnis dis. Elit ullamcorper dignissim cras tincidunt lobortis. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Varius quam quisque id diam. Volutpat lacus laoreet non curabitur. Sapien faucibus et molestie ac feugiat. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Nibh tellus molestie nunc non blandit. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Proin libero nunc consequat interdum varius sit amet mattis.
+import Col from "react-bootstrap/cjs/Col";
+import Row from "react-bootstrap/cjs/Row";
 
-                Phasellus vestibulum lorem sed risus ultricies. Id diam vel quam elementum. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Eget nunc lobortis mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit. Vel eros donec ac odio tempor orci dapibus ultrices. Orci a scelerisque purus semper eget duis at tellus. Arcu non sodales neque sodales. Quam adipiscing vitae proin sagittis nisl. Nunc scelerisque viverra mauris in. Odio morbi quis commodo odio aenean sed. Viverra nibh cras pulvinar mattis nunc.
+import Card from "./Card";
 
-                Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Vitae elementum curabitur vitae nunc sed velit dignissim. Amet risus nullam eget felis eget nunc lobortis mattis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Dictum varius duis at consectetur lorem donec. Ut sem nulla pharetra diam. Lectus proin nibh nisl condimentum id. Pharetra sit amet aliquam id diam maecenas. Duis at tellus at urna condimentum mattis pellentesque. Mattis rhoncus urna neque viverra. Adipiscing at in tellus integer feugiat scelerisque varius. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. In ornare quam viverra orci sagittis eu volutpat. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Mattis aliquam faucibus purus in massa tempor.
+class About extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            cards: [
+                {id: 1, desc: "1desc"},
+                {id: 2, desc: "2desc"},
+                {id: 3, desc: "3desc"},
+            ]
+        };
+    }
 
-                Tortor aliquam nulla facilisi cras fermentum odio. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Nunc sed blandit libero volutpat. Eu facilisis sed odio morbi quis commodo odio aenean sed. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Elementum integer enim neque volutpat ac tincidunt. Gravida quis blandit turpis cursus. At tempor commodo ullamcorper a. Ut venenatis tellus in metus vulputate eu scelerisque felis. Semper quis lectus nulla at volutpat diam. Felis imperdiet proin fermentum leo vel orci porta non. Orci sagittis eu volutpat odio. Egestas integer eget aliquet nibh praesent. Nunc sed velit dignissim sodales ut eu. Ultricies mi quis hendrerit dolor. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Tellus mauris a diam maecenas sed enim ut sem viverra. Penatibus et magnis dis parturient montes nascetur ridiculus mus. In ante metus dictum at tempor commodo ullamcorper a lacus. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta.
+    render() {
+        return (
+            <div className={classes.About}>
+                <Row>
+                    <Col className="d-flex justify-content-center mb-3">
+                        <h1>About section</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    {this.state.cards.map(card =>
+                        <Col xs={4}>
+                            <Card
+                                key={card.id}
+                                card={card} />
+                        </Col>
+                    )}
+                </Row>
+            </div>
+        );
+    }
+}
 
-                At tempor commodo ullamcorper a lacus. Mattis nunc sed blandit libero volutpat sed cras ornare. Gravida arcu ac tortor dignissim convallis aenean et. Risus feugiat in ante metus dictum at tempor. Vitae purus faucibus ornare suspendisse sed nisi lacus. Egestas sed sed risus pretium quam vulputate dignissim. Elementum integer enim neque volutpat ac tincidunt. In nisl nisi scelerisque eu ultrices vitae auctor. Ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum. Tincidunt id aliquet risus feugiat in ante metus dictum. Scelerisque felis imperdiet proin fermentum leo vel. Urna id volutpat lacus laoreet non curabitur. Sit amet mattis vulputate enim nulla aliquet.Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Nec nam aliquam sem et tortor consequat. Aliquet bibendum enim facilisis gravida neque convallis. Turpis massa tincidunt dui ut. Bibendum at varius vel pharetra. Vitae aliquet nec ullamcorper sit. Ac felis donec et odio. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Natoque penatibus et magnis dis. Elit ullamcorper dignissim cras tincidunt lobortis. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Varius quam quisque id diam. Volutpat lacus laoreet non curabitur. Sapien faucibus et molestie ac feugiat. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Nibh tellus molestie nunc non blandit. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Proin libero nunc consequat interdum varius sit amet mattis.
+About.propTypes = {};
 
-                Phasellus vestibulum lorem sed risus ultricies. Id diam vel quam elementum. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Eget nunc lobortis mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit. Vel eros donec ac odio tempor orci dapibus ultrices. Orci a scelerisque purus semper eget duis at tellus. Arcu non sodales neque sodales. Quam adipiscing vitae proin sagittis nisl. Nunc scelerisque viverra mauris in. Odio morbi quis commodo odio aenean sed. Viverra nibh cras pulvinar mattis nunc.
-                liquam nulla facilisi cras fermentum odio. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Nunc sed blandit libero volutpat. Eu facilisis sed odio morbi quis commodo odio aenean sed. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Elementum integer enim neque volutpat ac tincidunt. Gravida quis blandit turpis cursus. At tempor commodo ullamcorper a. Ut venenatis tellus in metus vulputate eu scelerisque felis. Semper quis lectus nulla at volutpat diam. Felis imperdiet proin fermentum leo vel orci porta non. Orci sagittis eu volutpat odio. Egestas integer eget aliquet nibh praesent. Nunc sed velit dignissim sodales ut eu. Ultricies mi quis hendrerit dolor. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Tellus mauris a diam maecenas sed enim ut sem viverra. Penatibus et magnis dis parturient montes nascetur ridiculus mus. In ante metus dictum at tempor commodo ullamcorper a lacus. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta.
-
-                At tempor commodo ullamcorper a lacus. Mattis nunc sed blandit libero volutpat sed cras ornare. Gravida arcu ac tortor dignissim convallis aenean et. Risus feugiat in ante metus dictum at tempor. Vitae purus faucibus ornare suspendisse sed nisi lacus. Egestas sed sed risus pretium quam vulputate dignissim. Elementum integer enim neque volutpat ac tincidunt. In nisl nisi scelerisque eu ultrices vitae auctor. Ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum. Tincidunt id aliquet risus feugiat in ante metus dictum. Scelerisque felis imperdiet proin fermentum leo vel. Urna id volutpat lacus laoreet non curabitur. Sit amet mattis vulputate enim nulla aliquet.Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Nec nam aliquam sem et tortor consequat. Aliquet bibendum enim facilisis gravida neque convallis. Turpis massa tincidunt dui ut. Bibendum at varius vel pharetra. Vitae aliquet nec ullamcorper sit. Ac felis donec et odio. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Natoque penatibus et magnis dis. Elit ullamcorper dignissim cras tincidunt lobortis. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Varius quam quisque id diam. Volutpat lacus laoreet non curabitur. Sapien faucibus et molestie ac feugiat. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Nibh tellus molestie nunc non blandit. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Proin libero nunc consequat interdum varius sit amet mattis.
-
-                Phasellus vestibulum lorem sed risus ultricies. Id diam vel quam elementum. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Eget nunc lobortis mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit. Vel eros donec ac odio tempor orci dapibus ultrices. Orci a scelerisque purus semper eget duis at tellus. Arcu non sodales neque sodales. Quam adipiscing vitae proin sagittis nisl. Nunc scelerisque viverra mauris in. Odio morbi quis commodo odio aenean sed. Viverra nibh cras pulvinar mattis nunc.
-
-                Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Vitae elementum curabitur vitae nunc sed velit dignissim. Amet risus nullam eget felis eget nunc lobortis mattis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Dictum varius duis at consectetur lorem donec. Ut sem nulla pharetra diam. Lectus proin nibh nisl condimentum id. Pharetra sit amet aliquam id diam maecenas. Duis at tellus at urna condimentum mattis pellentesque. Mattis rhoncus urna neque viverra. Adipiscing at in tellus integer feugiat scelerisque varius. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. In ornare quam viverra orci sagittis eu volutpat. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Mattis aliquam faucibus purus in massa tempor.
-
-                Tortor aliquam nulla facilisi cras fermentum odio. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Nunc sed blandit libero volutpat. Eu facilisis sed odio morbi quis commodo odio aenean sed. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Elementum integer enim neque volutpat ac tincidunt. Gravida quis blandit turpis cursus. At tempor commodo ullamcorper a. Ut venenatis tellus in metus vulputate eu scelerisque felis. Semper quis lectus nulla at volutpat diam. Felis imperdiet proin fermentum leo vel orci porta non. Orci sagittis eu volutpat odio. Egestas integer eget aliquet nibh praesent. Nunc sed velit dignissim sodales ut eu. Ultricies mi quis hendrerit dolor. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Tellus mauris a diam maecenas sed enim ut sem viverra. Penatibus et magnis dis parturient montes nascetur ridiculus mus. In ante metus dictum at tempor commodo ullamcorper a lacus. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta.
-
-                At tempor
-                Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Vitae elementum curabitur vitae nunc sed velit dignissim. Amet risus nullam eget felis eget nunc lobortis mattis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Dictum varius duis at consectetur lorem donec. Ut sem nulla pharetra diam. Lectus proin nibh nisl condimentum id. Pharetra sit amet aliquam id diam maecenas. Duis at tellus at urna condimentum mattis pellentesque. Mattis rhoncus urna neque viverra. Adipiscing at in tellus integer feugiat scelerisque varius. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. In ornare quam viverra orci sagittis eu volutpat. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Mattis aliquam faucibus purus in massa tempor.
-
-                Tortor aliquam nulla facilisi cras fermentum odio. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Nunc sed blandit libero volutpat. Eu facilisis sed odio morbi quis commodo odio aenean sed. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Elementum integer enim neque volutpat ac tincidunt. Gravida quis blandit turpis cursus. At tempor commodo ullamcorper a. Ut venenatis tellus in metus vulputate eu scelerisque felis. Semper quis lectus nulla at volutpat diam. Felis imperdiet proin fermentum leo vel orci porta non. Orci sagittis eu volutpat odio. Egestas integer eget aliquet nibh praesent. Nunc sed velit dignissim sodales ut eu. Ultricies mi quis hendrerit dolor. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Tellus mauris a diam maecenas sed enim ut sem viverra. Penatibus et magnis dis parturient montes nascetur ridiculus mus. In ante metus dictum at tempor commodo ullamcorper a lacus. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta.
-
-                At tempor commodo ullamcorper a lacus. Mattis nunc sed blandit libero volutpat sed cras ornare. Gravida arcu ac tortor dignissim convallis aenean et. Risus feugiat in ante metus dictum at tempor. Vitae purus faucibus ornare suspendisse sed nisi lacus. Egestas sed sed risus pretium quam vulputate dignissim. Elementum integer enim neque volutpat ac tincidunt. In nisl nisi scelerisque eu ultrices vitae auctor. Ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum arcu vitae elementum. Tincidunt id aliquet risus feugiat in ante metus dictum. Scelerisque felis imperdiet proin fermentum leo vel. Urna id volutpat lacus laoreet non curabitur. Sit amet mattis vulputate enim nulla aliquet.</p>
-        </div>
-    );
-};
+export default About;

@@ -8,8 +8,13 @@ export const Landing = () => {
     return (
         <Row className={classes.Landing}>
             <Col>
-                <Row className="justify-content-center">
-                    <Button className={classes.Landing__Button}><i className="fas fa-arrow-down"/></Button>
+                <Row>
+                    <Col className="d-flex justify-content-center">
+                        <div className={classes.Landing__Header}>
+                            <h1>Welcome</h1>
+                        </div>
+                        <Button className={classes.Landing__Button}><i className="fas fa-arrow-down"/></Button>
+                    </Col>
                 </Row>
             </Col>
         </Row>

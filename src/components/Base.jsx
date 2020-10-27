@@ -1,6 +1,6 @@
 import React from "react";
 import {Landing} from "./Landing";
-import {About} from "./About";
+import About from "./About";
 import BgVideo from "./BgVideo";
 import Container from "react-bootstrap/cjs/Container";
 import Row from "react-bootstrap/cjs/Row"
