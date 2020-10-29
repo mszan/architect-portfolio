@@ -1,5 +1,12 @@
 .About {
-    padding: 3%;
+    padding: 3rem 1rem;
     position: relative;
     background-color: #FFFFFF;
+}
+
+.About__Header {}
+
+.About__Desc {
+    color: #777777;
+    text-align: center;
 }

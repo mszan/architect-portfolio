@@ -11,18 +11,19 @@ class Card extends React.Component {
     render() {
         return (
             <div className={classes.Card}>
-                <div className={classes.overlay}>
-                    <div className={classes.head}>
-                        <p>{this.props.card.desc}</p>
-                        <hr />
-                    </div>
-                    <div className={classes.price}>
-                        <p className="old">$699</p>
-                        <p className="new">$345</p>
-                    </div>
-                    <div className={classes.cart}>
-                        <span>ADD TO CART</span>
-                    </div>
+                <div className={classes.Card__Overlay}>
+                    <a href={this.props.card.modal_link}>
+                        <div className={classes.Card__Overlay__Head}>
+                            <p>{this.props.card.title}</p>
+                            <hr className={classes.Card__Overlay__Head__Hr} />
+                        </div>
+                        <div className={classes.Card__Overlay__Desc}>
+                            <p>{this.props.card.desc_main}</p>
+                        </div>
+                        <div className={classes.Card__Overlay__RMore}>
+                            <p>Click to see details</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         );

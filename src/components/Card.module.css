@@ -1,7 +1,7 @@
 .Card {
     width: 100%;
     height: 400px;
-    margin: auto;
+    margin-bottom: 1rem;
     background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
     background-color: black;
     background-size: cover;
@@ -10,7 +10,7 @@
     box-shadow: 0 0 2px #000;
 }
 
-.overlay {
+.Card__Overlay {
     padding: 10%;
     width: 100%;
     height: 100%;
@@ -20,62 +20,49 @@
     transition: all 0.5s;
 }
 
-.head {
+.Card__Overlay__Head {
     font-size: 30px;
     line-height: 40px;
     transform: translateY(40px);
     transition: all 0.7s;
 }
 
-.head hr {
-    position: absolute;
+.Card__Overlay__Head__Hr {
+    opacity: .3;
     display: block;
     border: none;
-    border-bottom: solid 2px #fef5df;
-    top: 200px;
-    transition: all 0.5s;
+    border-bottom: solid 1px #fef5df;
 }
 
-.price {
-    font-size: 22px;
-    line-height: 10px;
-    font-weight: bold;
+.Card__Overlay__Desc {
+    font-size: 1.2rem;
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.7s;
 }
-.price .old {
-    text-decoration: line-through;
-    color: #2f2f2f;
-}
 
-.cart {
+.Card__Overlay__RMore {
     font-size: 12px;
     opacity: 0;
     letter-spacing: 1px;
     transform: translateY(40px);
     transition: all 0.7s;
 }
-.cart i {
-    font-size: 16px;
+
+.Card:hover .Card__Overlay {
+    opacity: 1;
+}
+.Card:hover .Card__Overlay__Head {
+    transform: translateY(0px);
 }
 
-.Card:hover .overlay {
-    opacity: 1;
-}
-.Card:hover .overlay .head {
-    transform: translateY(0px);
-}
-.Card:hover .overlay hr {
-    width: 75px;
-    transition-delay: 0.4s;
-}
-.Card:hover .overlay .price {
+.Card:hover .Card__Overlay__Desc {
     transform: translateY(0px);
     transition-delay: 0.3s;
-    opacity: 1;
+    opacity: .7;
 }
-.Card:hover .overlay .cart {
+
+.Card:hover .Card__Overlay__RMore {
     transform: translateY(0px);
     transition-delay: 0.6s;
     opacity: 1;
