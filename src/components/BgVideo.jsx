@@ -39,7 +39,7 @@ class BgVideo extends React.Component {
                     id="BgVideo"
                     autoPlay
                     muted
-                    // loop
+                    loop
                     onLoadedData={this.videoIsLoaded}>
                     <source src="media/video/bg1.mp4" type="video/mp4"/>
                 </video>

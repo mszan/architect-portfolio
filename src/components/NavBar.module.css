@@ -1,4 +1,11 @@
-.NavBarBg {
+.NavBar {
     background-color: transparent!important;
     transition: .25s ease-in-out;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
+
+.NavBar__Hamburger {
+
 }

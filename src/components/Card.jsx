@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from "./Card.module.css"
-import Button from "react-bootstrap/cjs/Button";
 
 class Card extends React.Component {
     constructor(props) {

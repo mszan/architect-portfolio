@@ -1,3 +1,9 @@
+/*@media (min-width: 769px) {*/
+/*    .Landing__Face {*/
+/*        width: 50%;*/
+/*    }*/
+/*}*/
+
 .Landing {
     position: relative;
     height: 100vh;
@@ -7,15 +13,48 @@
     position: fixed;
     text-align: center;
     top: 50%;
-    width: 50%;
+    padding: 0 10%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 
 .Landing__Face__Header {
+    font-size: 4rem;
+}
+
+.Landing__Face__Cursor {
+    font-size: 4rem;
+    -webkit-animation: Landing__Face__Cursor__Anim 1s infinite;
+    animation: Landing__Face__Cursor__Anim 1s infinite;
+    margin-left: 1px
+}
+
+@-webkit-keyframes Landing__Face__Cursor__Anim {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes Landing__Face__Cursor__Anim {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
 }
 
 .Landing__Face__Desc {
+    font-size: 1rem;
     color: #5b5b5b;
 }
 

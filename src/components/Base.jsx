@@ -12,9 +12,11 @@ import {Team} from "./Team";
 class Base extends React.Component {
     render() {
         return (
-            <Container fluid className="p-0">
+            <Container fluid className="overflow-hidden p-0">
                 <Row>
-                    <NavBar />
+                    <Col>
+                        <NavBar />
+                    </Col>
                 </Row>
                 <Row id="Landing">
                     <Col>

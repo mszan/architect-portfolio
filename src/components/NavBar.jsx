@@ -26,9 +26,9 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <Navbar expand="lg" fixed="top" className={classes.NavBarBg}>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar variant="light" expand="lg" fixed="top" className={classes.NavBar}>
+                <Navbar.Brand href="#home">COMPANY NAME</Navbar.Brand>
+                <Navbar.Toggle className={classes.NavBar__Hamburger} aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
