@@ -9,7 +9,7 @@ class Card extends React.Component {
 
     render() {
         return (<div className={classes.Card}>
-            <div className={classes.Card__Img} style={{backgroundImage: `url(media${this.props.card.img})`}}>{null}</div>
+            <div className={classes.Card__Img} style={{backgroundImage: `url(${this.props.card.img})`}}>{null}</div>
             <div className={classes.Card__Inner}>
                 <h4 className={classes.Card__Inner__Title}>{this.props.card.title}</h4>
                 <span className={classes.Card__Inner__DescMain}>{this.props.card.desc_main}</span><br />

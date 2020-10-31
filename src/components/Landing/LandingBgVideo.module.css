@@ -1,4 +1,4 @@
-.BgVideo {
+.LandingBgVideo {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     transition: opacity .25s ease-in-out;
 }
 
-.BgVideoThumbnail {
+.LandingBgVideoThumbnail {
     position: fixed;
     height: 100vh;
     min-width: 100%;

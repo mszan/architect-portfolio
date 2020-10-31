@@ -1,12 +1,12 @@
 import React from "react";
-import {Landing} from "./Landing";
-import About from "./About";
-import BgVideo from "./BgVideo";
+import {Landing} from "../Landing/Landing";
+import About from "../About/About";
+import LandingBgVideo from "../Landing/LandingBgVideo";
 import Container from "react-bootstrap/cjs/Container";
 import Row from "react-bootstrap/cjs/Row"
 import Col from "react-bootstrap/cjs/Col";
-import NavBar from "./NavBar";
-import {Team} from "./Team";
+import NavBar from "../NavBar/NavBar";
+import {Team} from "../Team/Team";
 
 
 class Base extends React.Component {
@@ -20,7 +20,7 @@ class Base extends React.Component {
                 </Row>
                 <Row id="Landing">
                     <Col>
-                        <BgVideo />
+                        <LandingBgVideo />
                         <Landing />
                     </Col>
                 </Row>

@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Team.module.css";
 import Row from "react-bootstrap/cjs/Row";
 import Col from "react-bootstrap/cjs/Col";
-import Card from "./Card";
+import Card from "../Card/Card";
 
 export class Team extends React.Component {
     constructor(props) {
@@ -13,19 +13,19 @@ export class Team extends React.Component {
                     id: 1,
                     title: "John Doe",
                     desc_main: "Porta lorem mollis aliquam utmollis aliquam utmollis aliquam umollis aliquam utmollis aliquam utt porttitor leo a.",
-                    img: process.env.PUBLIC_URL +  "/img/team/1.jpg",
+                    img: process.env.PUBLIC_URL +  "/img/Team/Member1.jpg",
                 },
                 {
                     id: 2,
                     title: "Andrew Doe",
                     desc_main: "Porta lorem mollis aliquam utmollis aliquam utmollismollis aliquam utmollis aliquam ut aliquam ut porttitor leo a.",
-                    img: "/img/team/2.jpg",
+                    img: process.env.PUBLIC_URL +  "/img/Team/Member2.jpg",
                 },
                 {
                     id: 3,
                     title: "Jacob Doe",
                     desc_main: "Porta lorem mollis aliquam utmollis aliquam utmollis aliquammollis aliquam utmollis aliquam ut ut porttitor leo a.",
-                    img: "/img/team/3.jpg",
+                    img: process.env.PUBLIC_URL +  "/img/Team/Member3.jpg",
                 }
             ]
         };
@@ -34,7 +34,7 @@ export class Team extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className={classes.TeamBg} style={{backgroundImage: `url(media/img/TeamBg.jpg`}}>{null}</div>
+                <div className={classes.TeamBg} style={{backgroundImage: `url(${process.env.PUBLIC_URL +  "/img/Team/TeamBg.jpg"})`}}>{null}</div>
                 <Col className={classes.Team}>
                     <Row>
                         <Col className="d-flex justify-content-center mb-3">
