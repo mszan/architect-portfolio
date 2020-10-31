@@ -12,6 +12,7 @@
 .Team {
     background-color: rgba(31, 40, 46, .5);
     width: 100%;
+    min-height: 600px;
     position: absolute;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
     padding: 3rem 10% !important;
