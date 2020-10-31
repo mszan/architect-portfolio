@@ -7,6 +7,8 @@ import Row from "react-bootstrap/cjs/Row"
 import Col from "react-bootstrap/cjs/Col";
 import NavBar from "../NavBar/NavBar";
 import {Team} from "../Team/Team";
+import {Footer} from "../Footer/Footer";
+import {Contact} from "../Contact/Contact";
 
 
 class Base extends React.Component {
@@ -32,6 +34,16 @@ class Base extends React.Component {
                 <Row id="Team">
                     <Col>
                         <Team />
+                    </Col>
+                </Row>
+                <Row id="Contact">
+                    <Col>
+                        <Contact />
+                    </Col>
+                </Row>
+                <Row id="Footer">
+                    <Col>
+                        <Footer />
                     </Col>
                 </Row>
             </Container>

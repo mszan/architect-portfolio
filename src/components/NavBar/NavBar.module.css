@@ -5,7 +5,11 @@
     padding-right: 10% !important;
 }
 
-
 .NavBar__Hamburger {
+    transition: box-shadow .15s;
+}
 
+.NavBar__Hamburger:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
 }
