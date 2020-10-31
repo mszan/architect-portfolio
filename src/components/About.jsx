@@ -15,19 +15,37 @@ class About extends React.Component {
                     id: 1,
                     title: "Project #1",
                     desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
-                    img: "img/cards/1.jpg",
+                    img: process.env.PUBLIC_URL +  "/img/cards/1.jpg",
                 },
                 {
                     id: 2,
                     title: "Project #2",
                     desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
-                    img: "img/cards/2.jpg",
+                    img: "/img/cards/2.jpg",
                 },
                 {
                     id: 3,
                     title: "Project #3",
                     desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
-                    img: "img/cards/3.jpg",
+                    img: "/img/cards/3.jpg",
+                },
+                {
+                    id: 4,
+                    title: "Project #4",
+                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    img: "/img/cards/4.jpg",
+                },
+                {
+                    id: 5,
+                    title: "Project #5",
+                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    img: "/img/cards/5.jpg",
+                },
+                {
+                    id: 6,
+                    title: "Project #6",
+                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    img: "/img/cards/6.jpg",
                 },
             ]
         };
@@ -46,9 +64,9 @@ class About extends React.Component {
                         <p className={classes.About__Desc}>Sagittis id consectetur purus ut faucibus pulvinar elementum. Bibendum ut tristique et egestas quis ipsum. Risus in hendrerit gravida rutrum quisque non. Ullamcorper malesuada proin libero nunc consequat interdum varius. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl.</p>
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{ padding: 15}}>
                     {this.state.cards.map(card =>
-                        <Col md={4}>
+                        <Col sm={6} md={4} style={{ padding: 0}}>
                             <Card
                                 key={card.id}
                                 card={card} />

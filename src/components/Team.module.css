@@ -1,0 +1,28 @@
+.TeamBg {
+    /*transform: scale(1.05);*/
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 110vw;
+    /*filter: blur(5px);*/
+    /*-webkit-filter: blur(5px);*/
+    z-index: 0;
+}
+
+.Team {
+    background-color: rgba(31, 40, 46, .5);
+    padding: 3rem 1rem;
+    position: absolute;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+}
+
+.Team__Header {
+    color: #ffffff;
+}
+
+.Team__Desc {
+    color: #ffffff;
+    text-align: center;
+}

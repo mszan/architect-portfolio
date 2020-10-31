@@ -1,69 +1,60 @@
 .Card {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 1rem;
-    background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
     background-color: black;
-    background-size: cover;
-    cursor: pointer;
-    -webkit-box-shadow: 0 0 2px #000;
-    box-shadow: 0 0 2px #000;
+    overflow: hidden;
+    transition: background-color 1s;
+    /*position: relative;*/
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .5);
 }
 
-.Card__Overlay {
-    padding: 10%;
+.Card:hover {
+    transition: background-color 1s;
+    background-color: #2f2f2f;
+}
+
+.Card:hover .Card__Img {
+    transition: all 1s;
+    transform: scale(1.2);
+    opacity: 0.1;
+}
+
+.Card:hover .Card__Inner__Title,
+.Card:hover .Card__Inner__DescMain,
+.Card:hover .Card__Inner__ReadMore {
+    color: white;
+}
+
+.Card__Img {
+    transform: scale(1.1);
+    transition: all 1s;
+    opacity: 1;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Card__Inner {
+    color: white;
+    text-align: center;
+    top: 0;
+    padding: 1rem;
     width: 100%;
     height: 100%;
-    background: rgba(60, 60, 60, 0.9);
-    color: #ffffff;
-    opacity: 0;
-    transition: all 0.5s;
+    position: absolute;
 }
 
-.Card__Overlay__Head {
-    font-size: 30px;
-    line-height: 40px;
-    transform: translateY(40px);
-    transition: all 0.7s;
+.Card__Inner__DescMain,
+.Card__Inner__Title,
+.Card__Inner__ReadMore {
+    transition: color 1s;
+    color: transparent;
 }
 
-.Card__Overlay__Head__Hr {
-    opacity: .3;
-    display: block;
-    border: none;
-    border-bottom: solid 1px #fef5df;
-}
-
-.Card__Overlay__Desc {
-    font-size: 1.2rem;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.7s;
-}
-
-.Card__Overlay__RMore {
-    font-size: 12px;
-    opacity: 0;
-    letter-spacing: 1px;
-    transform: translateY(40px);
-    transition: all 0.7s;
-}
-
-.Card:hover .Card__Overlay {
-    opacity: 1;
-}
-.Card:hover .Card__Overlay__Head {
-    transform: translateY(0px);
-}
-
-.Card:hover .Card__Overlay__Desc {
-    transform: translateY(0px);
-    transition-delay: 0.3s;
-    opacity: .7;
-}
-
-.Card:hover .Card__Overlay__RMore {
-    transform: translateY(0px);
-    transition-delay: 0.6s;
-    opacity: 1;
+.Card__Inner__ReadMore {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 15px;
+    position: absolute;
+    font-weight: bold;
 }
