@@ -1,6 +1,45 @@
 .Contact {
+    text-align: center;
     background-color: gray;
     padding: 3rem 10%;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
     /*z-index: 1;*/
+}
+
+@media (min-width: 576px) {
+    .Contact__Form {
+        min-width: 400px!important;
+    }
+}
+
+@media(min-width: 769px) {
+    .Contact__Form {
+        min-width: 500px!important;
+    }
+}
+
+.Contact__Form {
+    color: #c8c8c8;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    padding: 30px!important;
+    background-color: #292b30;
+    height: 400px!important;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.Contact__Form__Header {
+    color: #ffffff;
+    margin-left: 1rem;
+    letter-spacing: 1rem;
+}
+
+.Contact__Form__Checkbox {
+    text-align: left;
+}
+
+.Contact__Form__Btn {
+    width: 100%;
+    background-color: #c8c8c8;
+    border-color: #c8c8c8;
 }

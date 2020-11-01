@@ -1,11 +1,28 @@
 import React from 'react';
 import classes from "./Card.module.css"
+// import Modal from 'react-modal';
+
 
 class Card extends React.Component {
     constructor(props) {
+        // Modal.setAppElement('#yourAppElement')
         super(props);
         this.state = {};
     }
+
+    // getModal() {
+    //     return (
+    //         <Modal
+    //             isOpen={modalIsOpen}
+    //             onAfterOpen={afterOpenModal}
+    //             onRequestClose={closeModal}
+    //             style={customStyles}
+    //             contentLabel="Example Modal">
+    //
+    //             <h2>Hello</h2>
+    //         </Modal>
+    //     );
+    // }
 
     render() {
         return (<div className={classes.Card}>

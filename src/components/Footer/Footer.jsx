@@ -26,7 +26,7 @@ export const Footer = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <div className={classes.Footer__Hr}/>
+                        <div className={"Hr"}/>
                     </Col>
                 </Row>
                 <Row>

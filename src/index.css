@@ -8,3 +8,9 @@ body {
     margin: 0;
     /*background-color: #1F282E;*/
 }
+
+.Hr {
+    margin: 1rem 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(143, 143, 143), rgba(255, 0, 0, 0));
+}
