@@ -6,12 +6,107 @@
 
 body {
     font-family: Lato, sans-serif!important;
+    color: #292b30;
     margin: 0;
     /*background-color: #1F282E;*/
 }
+
+input {
+    border-radius: 0!important;
+    border-color: #f8f9fa!important;
+}
+
+input:focus {
+    /*border-color: #f8f9fa!important;*/
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .25) !important;
+}
+
+textarea {
+    border-radius: 0!important;
+    border-color: #f8f9fa!important;
+}
+
+textarea:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .25) !important;
+}
+
+button {
+    border-radius: 0!important;
+    transition-duration: 300ms!important;
+    border-color: rgba(248, 249, 250, .25) !important;
+}
+
+/*CUSTOM CHECKBOX*/
+
+.Checkmark {
+    padding: .25rem;
+    color: transparent;
+    border: 1px solid rgba(248, 249, 250, .25);
+    transition: background-color 300ms;
+}
+
+.CheckBox {
+    text-align: left;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.CheckBox:hover .Checkmark {
+    background-color: rgba(248, 249, 250, .25);
+    color: rgba(248, 249, 250, .25);
+}
+
+.CheckBox input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.CheckBox input:checked ~ .Checkmark {
+    color: #292b30;
+    background-color: #f8f9fa;
+    visibility: visible;
+}
+
+/*GRADIENT HR*/
 
 .Hr {
     margin: 1rem 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(143, 143, 143), rgba(255, 0, 0, 0));
+}
+
+/*MODAL TRANSITIONS*/
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.ReactModal__Content {
+    outline: none;
+    transform: translateY(-300px);
+    transition: transform 300ms ease-in-out;
+}
+
+.ReactModal__Content--after-open{
+    transform: translateY(0px);
+}
+
+.ReactModal__Content--before-close{
+    transform: translateY(-300px);
 }

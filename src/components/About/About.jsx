@@ -14,37 +14,79 @@ class About extends React.Component {
                 {
                     id: 1,
                     title: "Project #1",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project1.jpg",
                 },
                 {
                     id: 2,
                     title: "Project #2",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project2.jpg",
                 },
                 {
                     id: 3,
                     title: "Project #3",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project3.jpg",
                 },
                 {
                     id: 4,
                     title: "Project #4",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project4.jpg",
                 },
                 {
                     id: 5,
                     title: "Project #5",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project5.jpg",
                 },
                 {
                     id: 6,
                     title: "Project #6",
-                    desc_main: "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    labels: [
+                        "Short label",
+                        "Long label",
+                    ],
+                    descriptions: [
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                        "Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.Porta lorem mollis aliquam ut porttitor leo a. Non blandit massa enim nec dui nunc mattis enim ut. Fermentum et sollicitudin ac orci. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Elementum facilisis leo vel fringilla est ullamcorper eget.",
+                    ],
                     img: process.env.PUBLIC_URL +  "/img/About/Project6.jpg",
                 },
             ]
@@ -78,6 +120,5 @@ class About extends React.Component {
     }
 }
 
-About.propTypes = {};
-
+// About.propTypes = {};
 export default About;

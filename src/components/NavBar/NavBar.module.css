@@ -7,6 +7,7 @@
 
 .NavBar__Hamburger {
     transition: box-shadow .15s;
+    border-color: rgba(0,0,0,.1) !important;
 }
 
 .NavBar__Hamburger:focus {

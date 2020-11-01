@@ -1,16 +1,17 @@
-.TeamBg {
-    overflow: hidden;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    width: 100vw;
-    z-index: 0;
-}
+/*.TeamBg {*/
+/*    overflow: hidden;*/
+/*    position: absolute;*/
+/*    background-color: black;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    height: 1300px;*/
+/*    width: 100vw;*/
+/*    z-index: 0;*/
+/*}*/
 
 .Team {
-    background-color: rgba(31, 40, 46, .5);
+    background-color: #292b30;
     width: 100%;
     min-height: 600px;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);

@@ -20,7 +20,7 @@
 
 .Card__Img {
     transform: scale(1.1);
-    transition: transform 1s;
+    transition: transform 300ms;
     opacity: 1;
     height: 300px;
     background-position: center;
@@ -30,7 +30,7 @@
 
 .Card__Inner {
     background-color: rgba(31, 40, 46, .6);
-    transition: opacity 1s;
+    transition: opacity 300ms;
     color: white;
     text-align: center;
     top: 0;
@@ -47,11 +47,58 @@
     font-size: .8rem;
 }
 
-.Card__Inner__ReadMore {
-    width: 100%;
+.Card__Inner__Btn {
+    width: 80%;
     text-align: center;
     left: 0;
     bottom: 15px;
     position: absolute;
     font-weight: bold;
+    margin: 0 10%;
+    color: #f8f9fa!important;
+    background-color: transparent!important;
+    border-color: rgba(248, 249, 250, .25);
+}
+
+.Card__Inner__Btn:hover {
+    color: #292b30!important;
+    background-color: #f8f9fa!important;
+    /*border-color: #f8f9fa!important;*/
+}
+
+.Card__Modal__Overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 43, 48, .7);
+}
+
+.Card__Modal__Content {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    border: 1px solid rgb(204, 204, 204);
+    background: #ffffff;
+    border-radius: 0;
+    padding: 3%;
+}
+
+.Card__Modal__Content__Description {
+    height: 69%;
+    /*border: 1px solid red;*/
+    overflow: scroll;
+}
+
+.Card__Modal__Content__Btn {
+    bottom: 5%;
+    left: 4%;
+    right: 4%;
+    position: absolute;
+    width: 92%;
 }

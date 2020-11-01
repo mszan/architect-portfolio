@@ -58,16 +58,28 @@
     color: #5b5b5b;
 }
 
-.Landing__Button {
+.Landing__Btn {
     position: fixed;
     top: 85vh;
-    background-color: rgba(31,40,46,.25) !important;
-    border-color: #ffffff !important;
-    border-radius: 50% !important;
-    color: #ffffff !important;
-    box-shadow: 0 0 5px 5px rgba(255,255,255,.5) !important;
+    border-radius: 0!important;
+    border-color: rgba(248, 249, 250, .25) !important;
+    animation: Landing__Face__Btn_Arrow_Fade 2s infinite;
 }
 
-.Landing__Button:focus,.Landing__Button:active {
-    box-shadow: 0 0 5px 0.2rem rgba(31,37,25,.25) !important;
+@keyframes Landing__Face__Btn_Arrow_Fade {
+    0% {
+        color: #c8c8c8;
+        box-shadow: none;
+        background-color: rgba(31, 40, 46, .15);
+    }
+    50% {
+        color: #ffffff;
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .25);
+        background-color: rgba(31, 40, 46, .35);
+    }
+    100% {
+        color: #c8c8c8;
+        box-shadow: none;
+        background-color: rgba(31, 40, 46, .15);
+    }
 }

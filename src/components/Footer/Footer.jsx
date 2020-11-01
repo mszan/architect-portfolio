@@ -3,30 +3,40 @@ import classes from "./Footer.module.css"
 import Row from "react-bootstrap/cjs/Row";
 import Col from "react-bootstrap/cjs/Col";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <Row className={classes.Footer}>
             <Col>
                 <Row className={classes.Footer__Social}>
                     <Col>
-                        <i className="fab fa-facebook-f" />
+                        <a href="https://facebook.com">
+                            <i className="fab fa-facebook-f" />
+                        </a>
                     </Col>
                     <Col>
-                        <i className="fab fa-twitter" />
+                        <a href="https://twitter.com">
+                            <i className="fab fa-twitter" />
+                        </a>
                     </Col>
                     <Col>
-                        <i className="fab fa-linkedin-in" />
+                        <a href="https://linkedin.com">
+                            <i className="fab fa-linkedin-in" />
+                        </a>
                     </Col>
                     <Col>
-                        <i className="fab fa-youtube" />
+                        <a href="https://youtube.com">
+                            <i className="fab fa-youtube" />
+                        </a>
                     </Col>
                     <Col>
-                        <i className="fab fa-instagram" />
+                        <a href="https://instagram.com">
+                            <i className="fab fa-instagram" />
+                        </a>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <div className={"Hr"}/>
+                        <div className="Hr"/>
                     </Col>
                 </Row>
                 <Row>
@@ -40,3 +50,5 @@ export const Footer = () => {
         </Row>
     );
 };
+
+export default Footer;

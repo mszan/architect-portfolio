@@ -14,7 +14,7 @@ export const Landing = () => {
                         <div className={classes.Landing__Face}>
                             <Typewriter
                                 options={{
-                                    strings: ['Fermentum odio', 'A lacus vestibulum'],
+                                    strings: ['Bears eat beets', 'Bears, Beets, Battlestar Galactica'],
                                     autoStart: true,
                                     loop: true,
                                     wrapperClassName: classes.Landing__Face__Header,
@@ -22,7 +22,7 @@ export const Landing = () => {
                                 }} />
                             <span className={classes.Landing__Face__Desc}>Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Massa massa ultricies mi quis hendrerit dolor magna. Nascetur ridiculus mus mauris vitae. Tellus mauris a diam maecenas sed. Laoreet suspendisse interdum consectetur libero id.</span>
                         </div>
-                        <Button className={classes.Landing__Button}><i className="fas fa-arrow-down"/></Button>
+                        <Button href="#Team" className={classes.Landing__Btn}>Learn more</Button>
                     </Col>
                 </Row>
             </Col>
