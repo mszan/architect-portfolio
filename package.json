@@ -14,8 +14,10 @@
     "react-background-video-player": "^1.1.6",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "react-loading-overlay": "^1.0.1",
     "react-modal": "^3.11.2",
     "react-scripts": "4.0.0",
+    "react-spinners": "^0.9.0",
     "typewriter-effect": "^2.13.1",
     "web-vitals": "^0.2.4"
   },
@@ -43,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@emotion/core": "^10.1.0"
   }
 }

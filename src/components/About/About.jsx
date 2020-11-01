@@ -66,7 +66,7 @@ class About extends React.Component {
                 </Row>
                 <Row style={{ padding: 15}}>
                     {this.state.cards.map(card =>
-                        <Col sm={6} md={4} style={{ padding: 0}}>
+                        <Col key={card.id} sm={6} md={4} style={{ padding: 0}}>
                             <Card
                                 key={card.id}
                                 card={card} />
