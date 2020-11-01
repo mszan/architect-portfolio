@@ -37,6 +37,8 @@ class LandingBgVideo extends React.Component {
                     autoPlay
                     muted
                     loop
+                    playsInline="true"
+                    disablePictureInPicture="true"
                     onLoadedData={this.videoIsLoaded}>
                     <source src={process.env.PUBLIC_URL + "/video/Landing/bg1.mp4"} type="video/mp4"/>
                 </video>
