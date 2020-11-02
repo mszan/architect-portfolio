@@ -1,11 +1,3 @@
-.Contact {
-    text-align: center;
-    background-color: gray;
-    padding: 3rem 10%;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
-    /*z-index: 1;*/
-}
-
 @media (min-width: 576px) {
     .Contact__Form {
         min-width: 400px!important;
@@ -22,6 +14,13 @@
     }
 }
 
+.Contact {
+    text-align: center;
+    background-color: gray;
+    padding: 6rem 10%;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
+}
+
 .Contact__Form {
     color: #c8c8c8;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
@@ -34,10 +33,8 @@
 .Contact__Form__Header {
     color: #ffffff;
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1rem;
-    /*margin-left: 1rem;*/
-    /*letter-spacing: rem;*/
 }
 
 .Contact__Form__Checkbox__Label {
@@ -56,5 +53,4 @@
 .Contact__Form__Btn:hover {
     color: #292b30!important;
     background-color: #f8f9fa!important;
-    /*border-color: #f8f9fa!important;*/
 }

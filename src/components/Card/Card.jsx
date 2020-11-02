@@ -25,10 +25,9 @@ class Card extends React.Component {
         return (
             <React.Fragment>
                 <div className={classes.Card}>
-
                     <div className={classes.Card__Img} style={{backgroundImage: `url(${this.props.card.img})`}}>{null}</div>
                     <div className={classes.Card__Inner}>
-                        <h4 className={classes.Card__Inner__Title}>{this.props.card.title}</h4>
+                        <h4>{this.props.card.title}</h4>
                         <h6>{this.props.card.labels[0]}</h6>
                         <span className={classes.Card__Inner__DescMain}>{this.props.card.descriptions[0]}</span><br />
                         <Button variant="light" onClick={this.handleOpenModal} className={classes.Card__Inner__Btn}>See details</Button>
@@ -41,6 +40,7 @@ class Card extends React.Component {
                     isOpen={this.state.showModal}
                     contentLabel="Modal #1 Global Style Override Example"
                     onRequestClose={this.handleCloseModal}>
+
                     <h2>{this.props.card.title}</h2>
                     <h6>{this.props.card.labels[1]}</h6>
                     <div className="Hr"/>
@@ -48,12 +48,11 @@ class Card extends React.Component {
                         <p>{this.props.card.descriptions[1]}</p>
                     </div>
                     <Button className={classes.Card__Modal__Content__Btn} variant="dark" onClick={this.handleCloseModal}>Close</Button>
+
                 </Modal>
             </React.Fragment>
         );
     }
 }
-
-Card.propTypes = {};
 
 export default Card;

@@ -3,7 +3,6 @@ import classes from "./Team.module.css";
 import Row from "react-bootstrap/cjs/Row";
 import Col from "react-bootstrap/cjs/Col";
 import Card from "../Card/Card";
-import About from "../About/About";
 
 class Team extends React.Component {
     constructor(props) {
@@ -56,7 +55,6 @@ class Team extends React.Component {
     render() {
         return (
             <React.Fragment>
-                {/*<div className={classes.TeamBg} style={{backgroundImage: `url(${process.env.PUBLIC_URL +  "/img/Team/TeamBg.jpg"})`}}>{null}</div>*/}
                 <Col className={classes.Team}>
                     <Row>
                         <Col className="d-flex justify-content-center mb-3">

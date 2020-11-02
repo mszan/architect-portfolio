@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from "react-bootstrap/cjs/Navbar";
 import Nav from "react-bootstrap/cjs/Nav";
-
 import classes from "./NavBar.module.css"
 
 class NavBar extends React.Component {
@@ -27,19 +26,18 @@ class NavBar extends React.Component {
     render() {
         return (
             <Navbar variant="light" expand="lg" fixed="top" className={classes.NavBar}>
-                <Navbar.Brand href="#home">COMPANY NAME</Navbar.Brand>
+                <Navbar.Brand href="#Landing">COMPANY NAME</Navbar.Brand>
                 <Navbar.Toggle className={classes.NavBar__Hamburger} aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="#About">About</Nav.Link>
+                        <Nav.Link href="#Team">Team</Nav.Link>
+                        <Nav.Link href="#Contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         );
     }
 }
-
-NavBar.propTypes = {};
 
 export default NavBar;

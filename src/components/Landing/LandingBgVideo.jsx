@@ -30,7 +30,6 @@ class LandingBgVideo extends React.Component {
                     id="LandingBgVideoThumbnail"
                     src={process.env.PUBLIC_URL + "/img/Landing/LandingBgVideoThumbnail.jpg"}
                     alt="LandingBgVideoThumbnail"/>}
-
                 <video
                     className={classes.LandingBgVideo}
                     id="LandingBgVideo"
@@ -40,12 +39,10 @@ class LandingBgVideo extends React.Component {
                     playsInline="true"
                     disablePictureInPicture="true"
                     onLoadedData={this.videoIsLoaded}>
-                    <source src={process.env.PUBLIC_URL + "/video/Landing/bg1.mp4"} type="video/mp4"/>
+                    <source src={process.env.PUBLIC_URL + "/video/Landing/bg.mp4"} type="video/mp4"/>
                 </video>
             </React.Fragment>
         );
     }
 }
-
-LandingBgVideo.propTypes = {};
 export default LandingBgVideo;

@@ -4,11 +4,14 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Lato, sans-serif!important;
     color: #292b30;
     margin: 0;
-    /*background-color: #1F282E;*/
 }
 
 input {
@@ -17,7 +20,6 @@ input {
 }
 
 input:focus {
-    /*border-color: #f8f9fa!important;*/
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .25) !important;
 }
 

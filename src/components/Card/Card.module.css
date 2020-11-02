@@ -41,8 +41,6 @@
     opacity: 0;
 }
 
-.Card__Inner__Title {}
-
 .Card__Inner__DescMain {
     font-size: .8rem;
 }
@@ -63,7 +61,6 @@
 .Card__Inner__Btn:hover {
     color: #292b30!important;
     background-color: #f8f9fa!important;
-    /*border-color: #f8f9fa!important;*/
 }
 
 .Card__Modal__Overlay {
@@ -91,7 +88,6 @@
 
 .Card__Modal__Content__Description {
     height: 69%;
-    /*border: 1px solid red;*/
     overflow: scroll;
 }
 

@@ -36,7 +36,7 @@ const Footer = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <div className="Hr"/>
+                        <div className={`Hr ${classes.Footer__Hr}`}/>
                     </Col>
                 </Row>
                 <Row>

@@ -5,9 +5,6 @@ import Container from "react-bootstrap/cjs/Container";
 import Row from "react-bootstrap/cjs/Row"
 import Col from "react-bootstrap/cjs/Col";
 import NavBar from "../NavBar/NavBar";
-// import {Team} from "../Team/Team";
-// import {Footer} from "../Footer/Footer";
-// import {Contact} from "../Contact/Contact";
 import LoadingOverlay from 'react-loading-overlay';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { css } from "@emotion/core";
@@ -60,7 +57,8 @@ class Base extends React.Component {
 
     render() {
         return (
-            <Container fluid className="overflow-hidden p-0">
+            <Container fluid
+                       className="overflow-hidden p-0">
                 <Row>
                     <Col>
                         {this.loadingOverlay()}
@@ -78,7 +76,6 @@ class Base extends React.Component {
                     </Col>
                 </Row>
                 <React.Suspense fallback={""}>
-
                     <Row id="About">
                         <Col>
                             <About />
