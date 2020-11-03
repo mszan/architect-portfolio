@@ -9,4 +9,4 @@ Sample architect portfolio built with React.
 - Uses custom react-modal to handle modals.
 
 ## Live demo
-Live web demo is available on [architect.mszanowski.pl](https://architect.mszanowski.pl/).
+Live web demo is available on [github pages](https://github.com/mszan/architect_portfolio/deployments/activity_log?environment=github-pages) for now.
